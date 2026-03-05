@@ -1,5 +1,4 @@
-
-    import java.time.LocalDate;
+import java.time.LocalDate; // El import siempre al principio y con jerarquía 0
 
 public class Ticket {
     private Pelicula pelicula;
@@ -7,7 +6,7 @@ public class Ticket {
     private int numeroSala;
     private int numeroAsiento;
     private LocalDate fecha;
-   
+
     public Ticket(Pelicula pelicula, int numeroFila, int numeroSala, int numeroAsiento, LocalDate fecha) {
         this.pelicula = pelicula;
         this.numeroFila = numeroFila;
@@ -15,38 +14,44 @@ public class Ticket {
         this.numeroAsiento = numeroAsiento;
         this.fecha = fecha;
     }
+
     public Pelicula getPelicula() {
         return pelicula;
     }
+
     public void setPelicula(Pelicula pelicula) {
         this.pelicula = pelicula;
     }
+
     public int getNumeroFila() {
         return numeroFila;
     }
+
     public void setNumeroFila(int numeroFila) {
         this.numeroFila = numeroFila;
     }
+
     public int getNumeroSala() {
         return numeroSala;
     }
+
     public void setNumeroSala(int numeroSala) {
         this.numeroSala = numeroSala;
     }
+
     public int getNumeroAsiento() {
         return numeroAsiento;
     }
+
     public void setNumeroAsiento(int numeroAsiento) {
         this.numeroAsiento = numeroAsiento;
     }
+
     public LocalDate getFecha() {
         return fecha;
     }
+
     public void setFecha(LocalDate fecha) {
         this.fecha = fecha;
     }
-   
-  
-   
-    
 }
